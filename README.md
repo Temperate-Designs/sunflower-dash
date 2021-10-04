@@ -1,4 +1,5 @@
-![GitHub issues](https://img.shields.io/github/issues/Temperate-Designs/sunflower-dash?color=green&logo=github&logoColor=white)
+[![GitHub issues](https://img.shields.io/github/issues-raw/Temperate-Designs/sunflower-dash?color=green&logo=GitHub&logoColor=white)](https://github.com/Temperate-Designs/sunflower-dash/issues)
+
 # sunflower_dash
 
 A new Flutter project.

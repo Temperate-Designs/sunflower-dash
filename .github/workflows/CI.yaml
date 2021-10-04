@@ -1,0 +1,25 @@
+---
+name: CI tests
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  release:
+    types:
+      - created
+jobs:
+  unit_tests:
+    name: Unit Tests
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - name: Install dev tools
+        run: |
+          sudo snap install flutter --classic
+          flutter doctor -v
+      - name: Run tests
+        run: flutter test

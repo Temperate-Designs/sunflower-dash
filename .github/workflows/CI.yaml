@@ -20,6 +20,8 @@ jobs:
       - name: Install dev tools
         run: |
           sudo snap install flutter --classic
+          flutter upgrade
+          yes | flutter doctor --android-licenses
           flutter doctor -v
       - name: Run tests
         run: flutter test

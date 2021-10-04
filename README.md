@@ -1,3 +1,4 @@
+![GitHub issues](https://img.shields.io/github/issues/Temperate-Designs/sunflower-dash?color=green&logo=github&logoColor=white)
 # sunflower_dash
 
 A new Flutter project.

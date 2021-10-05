@@ -1,0 +1,28 @@
+name: sunflower-dash
+version: 1.0.0
+summary: A fun game with lots of sunflowers
+description: A fun game with lots of sunflowers
+
+confinement: strict
+base: core18
+grade: stable
+
+slots:
+  dbus-sunflower-dash:
+    interface: dbus
+    bus: session
+    name: com.temperatedesigns.sunflower_dash
+
+apps:
+  sunflower-dash-app:
+    command: sunflower_dash
+    extensions: [flutter-master]
+    plugs:
+    - network
+    slots:
+      - dbus-sunflower-dash
+parts:
+  sunflower-dash-app:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart

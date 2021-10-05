@@ -11,13 +11,13 @@ on:
     types:
       - created
 jobs:
-  unit_tests:
+  linux:
     name: Build Packages
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout sources
         uses: actions/checkout@v2
-      - name: Install dev tools
+      - name: Install Flutter
         run: |
           sudo snap install flutter --classic
           flutter config --enable-linux-desktop
@@ -31,3 +31,21 @@ jobs:
         with:
           name: sunflower-dash-linux
           path: build/linux/x64/release/bundle
+
+  snap:
+    name: Build snap
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - name: Install snapcraft
+        run: |
+          set -x
+          sudo snap install snapcraft --classic
+          sudo snap install multipass
+          sudo usermod --append --groups lxd ${USER}
+          echo /snap/bin >> ${GITHUB_PATH}
+          sudo chown root:root /
+          sudo /snap/bin/lxd init --auto
+      - name: Build snap
+        run: sudo snapcraft --use-lxd

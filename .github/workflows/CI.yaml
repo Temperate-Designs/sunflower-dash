@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Checkout sources
         uses: actions/checkout@v2
-      - name: Install dev tools
+      - name: Install Flutter
         run: |
           sudo snap install flutter --classic
           flutter upgrade

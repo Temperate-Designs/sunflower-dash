@@ -49,3 +49,8 @@ jobs:
           sudo /snap/bin/lxd init --auto
       - name: Build snap
         run: sudo snapcraft --use-lxd
+      - name: Store build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: sunflower-dash-snap
+          path: '*.snap'

@@ -1,0 +1,28 @@
+---
+name: Build packages
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  release:
+    types:
+      - created
+jobs:
+  unit_tests:
+    name: Build Packages
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v2
+      - name: Install dev tools
+        run: |
+          sudo snap install flutter --classic
+          flutter config --enable-linux-desktop
+          flutter upgrade
+          yes | flutter doctor --android-licenses
+          flutter doctor -v
+      - name: run `flutter build linux`
+        run: flutter build linux

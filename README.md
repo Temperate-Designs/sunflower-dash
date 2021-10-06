@@ -2,6 +2,8 @@
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/Temperate-Designs/sunflower-dash?color=purple&logo=Github)](https://github.com/Temperate-Designs/sunflower-dash/pulls) &nbsp;
 [![Project](https://img.shields.io/badge/project-Kanban-orange)](https://github.com/Temperate-Designs/sunflower-dash/projects/1)
 
+[![GitPod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/Temperate-Designs/sunflower-dash)
+
 # SunflowerDash
 
 A fun game with lots of sunflowers.
@@ -16,10 +18,19 @@ A fun game with lots of sunflowers.
 - The floor is covered with goatheads or/and cacti
 - There are gopher holes that you can use to escape the obstacles
 - But you have to watch out for the gopher
-- In the shop you can buy a bee protective sheild or 3 bee sheilds make one wasp shield
-- There are wasps and they can sting faster and have a shorter distance range
+- In the shop you can buy a bee protective sheild or 3 bee sheilds
+  make one wasp shield
+- There are wasps and they can sting faster and have a shorter
+  distance range
 - You can customize your beach ball to what ever you want
 - Bell flowers can catapult you forward
 - Some sunflowers go up and down
 - Thorny flowers pop you
 - Sometimes there are swinging axes that you have to avoid
+
+## Developer Notes
+
+We suggest you use a Flutter aware IDE such as Android Studio, Visual
+Studio Code with the Flutter plugin, or go over to
+[GitPod](https://gitpod.io#https://github.com/Temperate-Designs/sunflower-dash)
+where everything is already set up.

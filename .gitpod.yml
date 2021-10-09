@@ -80,3 +80,8 @@ vscode:
     - dart-code.flutter
     - eamodio.gitlens
     - dart-code.dart-code
+
+github:
+  prebuilds:
+    addComment: true
+    addBadge: true

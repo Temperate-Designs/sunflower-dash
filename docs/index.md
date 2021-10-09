@@ -35,6 +35,9 @@
 
 ![Game Art](assets/sunflower-dash-art-gameplay.jpg)
 
+![Game Art](assets/sunflower-dash-art-sketch.jpg)
+
+
 ## Developer Notes
 
 We suggest you use a Flutter aware IDE such as Android Studio, Visual

@@ -10,9 +10,9 @@
 ## Introduction
 
 - Player is a beach ball bouncing on sunflowers
-- Your currency in the game are flower petals and stars(stars are more
-  valuble than flower petals)
-- Flower color are the colors in your color invetory(you slowly
+- Your currency in the game are flower petals and stars (stars are
+  more valuble than flower petals)
+- Flower color are the colors in your color inventory (you slowly
   collect them while you play)
 - Some sunflowers sway from side to side
 - Evil bees and worms eat or pop ball

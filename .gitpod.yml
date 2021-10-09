@@ -1,3 +1,4 @@
+---
 # Based on the template at https://github.com/gitpod-io/template-flutter
 
 image:
@@ -18,10 +19,10 @@ tasks:
 
       flutter pub get
 
-      flutter build -v bundle
+      # flutter build -v bundle
       flutter build -v web
-      flutter build -v appbundle
-      flutter build -v apk
+      # flutter build -v appbundle
+      # flutter build -v apk
 
   - command: |
       # Gitpod is not able to run emulators within a worspace at this
@@ -62,15 +63,15 @@ tasks:
 
       flutter devices
 
-      flutter run --web-port 8080
+      # flutter run --web-port 8080
 
 ports:
   - port: 5900
     onOpen: ignore
-    # vnc
+# vnc
   - port: 6080
     onOpen: open-preview
-    # flutter
+# flutter
   - port: 8080
     onOpen: open-preview
 
@@ -78,3 +79,4 @@ vscode:
   extensions:
     - dart-code.flutter
     - eamodio.gitlens
+    - dart-code.dart-code

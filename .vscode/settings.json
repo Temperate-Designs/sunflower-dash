@@ -1,6 +1,9 @@
 {
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.colorCustomizations": {
     
-    }
+    },
+    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+    "workbench.preferredLightColorTheme": "Visual Studio Light",
+    "git.alwaysSignOff": true
 }

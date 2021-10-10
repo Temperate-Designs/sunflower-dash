@@ -40,6 +40,12 @@ title: Sunflower Dash
 
 ![Game Art](assets/sunflower-dash-art-sketch.jpg)
 
+# Sunflowers
+
+- Not all Sunflowers behave the same way.
+- Some Sunflowers stay still.
+- Sunflowers go up and down and side to side.
+- The flower petals are floating in the air and you need to jump to get them.
 # Developer Notes
 
 We suggest you use a Flutter aware IDE such as Android Studio, Visual

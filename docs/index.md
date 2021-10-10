@@ -1,3 +1,8 @@
+---
+layout: page
+title: Sunflower Dash
+---
+
 [![Project](https://img.shields.io/badge/project-Kanban-orange)](https://github.com/Temperate-Designs/sunflower-dash/projects/1) &nbsp;
 [![GitHub issues](https://img.shields.io/github/issues-raw/Temperate-Designs/sunflower-dash?color=green&logo=GitHub&logoColor=white)](https://github.com/Temperate-Designs/sunflower-dash/issues) &nbsp;
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/Temperate-Designs/sunflower-dash?color=purple&logo=Github)](https://github.com/Temperate-Designs/sunflower-dash/pulls) &nbsp;

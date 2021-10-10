@@ -80,6 +80,7 @@ vscode:
     - dart-code.flutter
     - eamodio.gitlens
     - dart-code.dart-code
+    - editorconfig.editorconfig
 
 github:
   prebuilds:

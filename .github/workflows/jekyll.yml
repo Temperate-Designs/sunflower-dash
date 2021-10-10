@@ -1,5 +1,5 @@
+---
 name: Jekyll site CI
-
 on:
   push:
     branches: [ main ]
@@ -8,15 +8,19 @@ on:
 
 jobs:
   build:
-
+    name: Build online documentation
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the site in the jekyll/builder container
-      run: |
-        docker run \
-        -v ${{ github.workspace }}:/srv/jekyll \
-        -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest \
-        /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future --verbose --trace"
+      - uses: actions/checkout@v2
+      - name: Build the site in the jekyll/builder container
+        run: |
+          docker run \
+          --volume ${{ github.workspace }}/docs:/srv/jekyll \
+          --volume ${{ github.workspace }}/docs/_site:/srv/jekyll/_site \
+          jekyll/builder:latest \
+          /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future --verbose --trace"
+      - name: Store webpage
+        uses: actions/upload-artifact@v2
+        with:
+          name: sunflower-dash-docs
+          path: docs/_site

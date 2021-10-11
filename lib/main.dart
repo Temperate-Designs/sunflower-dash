@@ -1,15 +1,7 @@
-import 'package:flame/flame.dart';
-import 'package:flame/game.dart';
 import 'package:flame/components.dart';
+import 'package:flame/game.dart';
 import 'package:flame/geometry.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_launcher_icons/android.dart';
-import 'package:flutter_launcher_icons/constants.dart';
-import 'package:flutter_launcher_icons/custom_exceptions.dart';
-import 'package:flutter_launcher_icons/ios.dart';
-import 'package:flutter_launcher_icons/main.dart';
-import 'package:flutter_launcher_icons/utils.dart';
-import 'package:flutter_launcher_icons/xml_templates.dart';
 
 void main() {
   final game = SunflowerDash();
@@ -17,7 +9,9 @@ void main() {
 }
 
 class Player extends SpriteComponent with Hitbox, Collidable {
-  Player() : super(size: Vector2.all(32));
+  Player() : super(size: Vector2.all(32)) {
+    debugMode = true;
+  }
 
   @override
   Future<void> onLoad() async {
@@ -33,10 +27,18 @@ class Player extends SpriteComponent with Hitbox, Collidable {
     super.onGameResize(gameSize);
     position = gameSize / 2;
   }
+
+  @override
+  void onCollision(Set<Vector2> intersectionPoints, Collidable other) {
+    super.onCollision(intersectionPoints, other);
+    print('hit!');
+  }
 }
 
 class Platform extends SpriteComponent with Hitbox, Collidable {
-  Platform() : super(size: Vector2(128, 32));
+  Platform() : super(size: Vector2(128, 32)) {
+    debugMode = true;
+  }
 
   @override
   Future<void> onLoad() async {

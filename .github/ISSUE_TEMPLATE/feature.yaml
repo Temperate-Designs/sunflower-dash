@@ -27,5 +27,4 @@ body:
       label: " Have you checked if this issue has been raised before?"
       options:
         - label: "I checked and didn't find similar issue"
-          required: true
- 
+          required: True

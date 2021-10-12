@@ -1,34 +1,26 @@
-FROM ubuntu:focal
-
-ENV GITHUB_GEM_VERSION 202
-ENV JSON_GEM_VERSION 1.8.6
+FROM jekyll/builder:latest
 
 RUN apt-get update
 RUN DPKG_FRONTEND=noninteractive apt-get upgrade --yes
-RUN apt-get install --yes ruby-full build-essential git zlib1g-dev
 
 RUN useradd --create-home docs
 USER docs
-
-RUN echo 'export GEM_HOME="${HOME}/gems"' >> /home/docs/.bashrc
-RUN echo 'export GEM_PATH="${HOME}/gems"' >> /home/docs/.bashrc
-RUN echo 'export PATH="${HOME}/gems/bin:${PATH}"' >> /home/docs/.bashrc
 
 ENV GEM_HOME=/home/docs/gems
 ENV GEM_PATH=/home/docs/gems
 ENV PATH=/home/docs/gems/bin:${PATH}
 
 COPY docs/Gemfile /home/docs
+
 WORKDIR /home/docs
 RUN gem install jekyll bundler
 RUN bundle install
+RUN bundle info minima
 
 WORKDIR /docs
 
 EXPOSE 4000
-CMD GEM_HOME=/home/docs/gems \
-    GEM_PATH=/home/docs/gems \
-    /home/docs/gems/bin/jekyll serve \
+CMD /home/docs/gems/bin/jekyll serve \
     -d /docs/_site --watch --force_polling -H 0.0.0.0 -P 4000
 
 # Local Variables:

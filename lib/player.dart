@@ -7,8 +7,9 @@ class Player extends SpriteComponent with Hitbox, Collidable {
   final maxSpeed = 200;
   var acceleration = Vector2(0, 20);
   var platformCollision = false;
+  final JoystickComponent joystick;
 
-  Player() : super(size: Vector2.all(32)) {
+  Player(this.joystick) : super(size: Vector2.all(32)) {
     debugMode = true;
   }
 
@@ -48,6 +49,9 @@ class Player extends SpriteComponent with Hitbox, Collidable {
   @override
   void update(double dt) {
     super.update(dt);
+    if (!joystick.delta.isZero()) {
+      position.add(joystick.relativeDelta * 80 * dt);
+    }
     if (!platformCollision) {
       speed += acceleration * dt;
       if (speed.length > maxSpeed) {

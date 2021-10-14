@@ -34,4 +34,6 @@ title: Game Design
 
 # Details
 
-- [Sunflowers](sunflowers.html)
+- [Sunflowers]({% link sunflowers.md %})
+
+Back to [main page]({% link index.md %})

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sunflower Dash
+title: Main
 ---
 
 [![Project](https://img.shields.io/badge/project-Kanban-orange)](https://github.com/Temperate-Designs/sunflower-dash/projects/1) &nbsp;
@@ -12,7 +12,7 @@ title: Sunflower Dash
 
 # Introduction
 
-You can read about the [game design](game-design.html).
+You can read about the [game design]({% link game-design.md %}).
 
 # Developer Notes
 

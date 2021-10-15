@@ -26,5 +26,6 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
     "editor.wrappingStrategy": "advanced",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "cmake.configureOnOpen": false
 }

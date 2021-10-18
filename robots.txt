@@ -2,5 +2,5 @@ User-agent: *
 # robotstxt.org - if ENV production variable is false robots will be disallowed.
 
 Allow: /
-Sitemap: https://temperate-designs.github.io//sitemap.xml
+Sitemap: https://temperate-designs.github.io/sunflower-dash/sitemap.xml
 

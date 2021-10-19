@@ -1,27 +1,30 @@
-FROM jekyll/builder:latest
+FROM ubuntu:20.04
 
-RUN apt-get update
-RUN DPKG_FRONTEND=noninteractive apt-get upgrade --yes
+ARG HUGO_VERSION=0.88.1
 
-RUN useradd --create-home docs
-USER docs
+RUN apt update
+RUN DEBIAN_FRONTEND=noninteractive apt install --yes \
+    git \
+    node-autoprefixer \
+    node-postcss \
+    npm \
+    sudo \
+    wget
 
-ENV GEM_HOME=/home/docs/gems
-ENV GEM_PATH=/home/docs/gems
-ENV PATH=/home/docs/gems/bin:${PATH}
+WORKDIR /tmp
+RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+RUN tar xvf hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
+RUN mv hugo /usr/bin/
+RUN mkdir /site
 
-COPY docs/Gemfile /home/docs
+# RUN npm install --global autoprefixer
+# RUN npm install --global postcss-cli
 
-WORKDIR /home/docs
-RUN gem install jekyll bundler
-RUN bundle install
-RUN bundle info minima
+RUN echo "root:ubuntu" | chpasswd
 
-WORKDIR /docs
-
-EXPOSE 4000
-CMD /home/docs/gems/bin/jekyll serve \
-    -d /docs/_site --watch --force_polling -H 0.0.0.0 -P 4000
+ENV HUGO_ENV production
+WORKDIR /site
+CMD ["/usr/bin/hugo", "serve", "--bind", "0.0.0.0", "--disableFastRender"]
 
 # Local Variables:
 # mode: dockerfile

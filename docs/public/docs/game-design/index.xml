@@ -1,0 +1,303 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sunflower Dash – Game Design</title>
+    <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/</link>
+    <description>Recent content in Game Design on Sunflower Dash</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://temperate-designs.github.io/sunflower-dash/docs/game-design/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Bees and Wasps</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/bees-and-wasps/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/bees-and-wasps/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Bees sting and pop the ball&lt;/li&gt;
+&lt;li&gt;They evolve and turn into wasps&lt;/li&gt;
+&lt;li&gt;Wasps have a quicker attack and have a longer flight range also have a more lethal sting&lt;/li&gt;
+&lt;li&gt;Bees have a limited flight range&lt;/li&gt;
+&lt;li&gt;Knock bees out with fly swatters&lt;/li&gt;
+&lt;li&gt;Bees have one stinger but wasps have three&lt;/li&gt;
+&lt;li&gt;Stings absorbed by bee amunity&lt;/li&gt;
+&lt;li&gt;Each wasp sting absorbed by three amunity&lt;/li&gt;
+&lt;li&gt;Bees and wasps wear top hats&lt;/li&gt;
+&lt;li&gt;Wasps are bigger than bees&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Butterfly</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/butterfly/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/butterfly/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Butterflys pick you up&lt;/li&gt;
+&lt;li&gt;You fly for 10 seconds&lt;/li&gt;
+&lt;li&gt;You do not control butterflys&lt;/li&gt;
+&lt;li&gt;Butterflys move randomly they can go up, down, backwards, and forwards&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Flowers</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/flowers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/flowers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Flowers&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sunflowers are the main flower that you will see throughout the game.&lt;/li&gt;
+&lt;li&gt;Some sunflowers will be wilted and collapse 1 second after contact with the ball.&lt;/li&gt;
+&lt;li&gt;Bellflowers catapult you forward into the air and you will fly for 5 seconds.&lt;/li&gt;
+&lt;li&gt;Swaying sunflowers sway in the wind and you have to calculate when to jump on them.&lt;/li&gt;
+&lt;li&gt;Dandelions let off dandelion seeds that carry you through the air.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Search Results</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/search/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sunflower Dash - Game Design</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/game-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/game-design/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Player is a beach ball bouncing on sunflowers&lt;/li&gt;
+&lt;li&gt;Your currency in the game are flower petals and stars (stars are
+more valuable than flower petals)&lt;/li&gt;
+&lt;li&gt;Flower color are the colors in your color inventory (you slowly
+collect them while you play)&lt;/li&gt;
+&lt;li&gt;Some sunflowers sway from side to side&lt;/li&gt;
+&lt;li&gt;Evil bees and worms eat or pop ball&lt;/li&gt;
+&lt;li&gt;Butterflies and dandelion seeds carry you around&lt;/li&gt;
+&lt;li&gt;The floor is covered with goatheads or/and cacti&lt;/li&gt;
+&lt;li&gt;There are gopher holes that you can use to escape the obstacles but
+you have to watch out for the gopher that will chase you down the
+tunnels in the gopher holes&lt;/li&gt;
+&lt;li&gt;In the shop you can buy a bee protective shield or 3 bee shields
+make one wasp shield&lt;/li&gt;
+&lt;li&gt;There are wasps and they can sting faster and have a longer
+distance range&lt;/li&gt;
+&lt;li&gt;You can customize your beach ball in the shop using flower colors
+for custom design or you can buy pre-made designs using flower
+petals&lt;/li&gt;
+&lt;li&gt;Bell flowers can catapult you forward&lt;/li&gt;
+&lt;li&gt;Some sunflowers go up and down&lt;/li&gt;
+&lt;li&gt;Thorny goatheads pop you&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;game-art&#34;&gt;Game art&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;https://temperate-designs.github.io/sunflower-dash/sunflower-dash-art-gameplay.jpg&#34; alt=&#34;Game Art&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://temperate-designs.github.io/sunflower-dash/sunflower-dash-art-sketch.jpg&#34; alt=&#34;Game Art&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://temperate-designs.github.io/sunflower-dash/sunflower-dash-art-3.jpg&#34; alt=&#34;Game Art&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sunflower Dash - Petals</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/petals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/petals/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Petals are like money.&lt;/li&gt;
+&lt;li&gt;You can get things from the shop with them.&lt;/li&gt;
+&lt;li&gt;You get flower petels when you run into them.&lt;/li&gt;
+&lt;li&gt;Petals are yellow&lt;/li&gt;
+&lt;li&gt;You get one on sun flowers,two on bell flowers,and one on butterflies.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t get one petal on every flower.&lt;/li&gt;
+&lt;li&gt;If you get rainbow petals you can get any thing in the shop.&lt;/li&gt;
+&lt;li&gt;Rainbow petals are very rare.&lt;/li&gt;
+&lt;li&gt;Big petals are 3 small petals.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sunflower Dash - Shop</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/shop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/shop/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;In the shop you can get potions, baseball bats and new skins.&lt;/li&gt;
+&lt;li&gt;You get things from the shop with petals.&lt;/li&gt;
+&lt;li&gt;You can upgrade baseball bats into chain saws.&lt;/li&gt;
+&lt;li&gt;Potions are 10 petals, new skins are 10 - 100, baseball bats are 15.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sunflower Dash - Things on the ground</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/things-on-the-ground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/things-on-the-ground/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;trampolines
+&lt;ul&gt;
+&lt;li&gt;make you bounce&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;goatheads
+&lt;ul&gt;
+&lt;li&gt;make your beach ball pop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;rocks
+&lt;ul&gt;
+&lt;li&gt;you lose some air&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;snakes
+&lt;ul&gt;
+&lt;li&gt;toss you back up to the flowers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;gum
+&lt;ul&gt;
+&lt;li&gt;makes you stick to the ground&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sunflower Dash - Types of sunflowers</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/types_of_sunflowers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/types_of_sunflowers/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The sunflowers will have faces that show if they are healthy/alive,
+eaten, or wilted.&lt;/p&gt;
+&lt;p&gt;There are many different types of sunflower. Here are a few:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Regular sunflowers have happy faces and stand still and don&amp;rsquo;t do
+anything exept wilt over a set period time. Face:O O U&lt;/li&gt;
+&lt;li&gt;Wilted sunflowers will break if you sit on them for too long. When
+they wilt, they will be bent over and have a brownish tint and look
+sick. They will have sad faces. Face: O O n&lt;/li&gt;
+&lt;li&gt;Swaying sunflowers have silly faces and will sway from side to side.
+Player will have to time their jump or will fall off the sunflower
+and have to either get back on or face the consequences below. Face:
+@ @ Y&lt;/li&gt;
+&lt;li&gt;Eaten sunflowers have x eyes and little bites on the sides. They
+break as soon as you jump on them, then you fall onto the ground.
+are often near gopher holes or near different animals. They eat the
+sunflowers. These don&amp;rsquo;t come very often. Face: X X n There are more
+types of flowers like&lt;/li&gt;
+&lt;li&gt;Bell flower cannons are basically bell flowers. If you jump on one,
+it will slingshot you. You can&amp;rsquo;t controll how far it slingshots you,
+and you can&amp;rsquo;t controll where you go either. They slingshot you in
+the opposite direction the flower is from the stem (if it&amp;rsquo;s on the
+left, it will slingshot you forwards, if it&amp;rsquo;s on the right, it will
+slingshot you backwards.&lt;/li&gt;
+&lt;li&gt;Weeds will hide stuff on the ground, and there&amp;rsquo;s usually a small gap
+where they are; they take over from the sunflowers.&lt;/li&gt;
+&lt;li&gt;Dandelions will scatter seeds that you can ride on. You can not
+controll where you go, and dissapear, leaving the seed. You can grab
+the seed to plant another dandelion (ex. if you need to cross a
+patch of weeds)&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sunflower Dash - Underground</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/underground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/underground/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Bottles are a quick way to get underground.&lt;/li&gt;
+&lt;li&gt;Sleeping gophers chase you when you walk into the tunnel. If you have a snail shell you can disguise and walk right past the sleeping gophers.&lt;/li&gt;
+&lt;li&gt;Gophers chase you until you get out of the tunnel.&lt;/li&gt;
+&lt;li&gt;Worms make small tunnels that you can escape from the gophers.&lt;/li&gt;
+&lt;li&gt;Worms will pop you if you get too close to them.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Sunflowers</title>
+      <link>https://temperate-designs.github.io/sunflower-dash/docs/game-design/sunflowers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://temperate-designs.github.io/sunflower-dash/docs/game-design/sunflowers/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;Not all Sunflowers behave the same way.&lt;/li&gt;
+&lt;li&gt;Some Sunflowers stay still.&lt;/li&gt;
+&lt;li&gt;Sunflowers go up and down and side to side.&lt;/li&gt;
+&lt;li&gt;The flower petals are floating in the air and you need to jump to
+get them.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

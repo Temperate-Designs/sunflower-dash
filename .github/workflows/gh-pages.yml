@@ -14,16 +14,41 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
-          fetch-depth: 0
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.88.1'
           extended: true
 
-      - name: Build
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install npm packages
+        run: |
+          set -x
+          cd docs
+          npm install --global npm@latest
+          npm install --global postcss-cli
+          # Note that autoprefixer needs to be install locally in the `/docs` directory
+          # See: https://discourse.gohugo.io/t/getting-error-loading-postcss-plugin-when-running-hugo-with-source/34213
+          npm install autoprefixer
+          npm list --global
+          npm list
+
+      - name: Build webpage
         env:
           HUGO_ENV: production
         run: |
@@ -32,7 +57,6 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/public

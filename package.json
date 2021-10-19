@@ -1,0 +1,24 @@
+{
+  "name": "sunflower-dash",
+  "version": "0.0.1",
+  "description": "A fun game.",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Temperate-Designs/sunflower-dash.git"
+  },
+  "author": "",
+  "license": "BSD-3",
+  "bugs": {
+    "url": "https://github.com/Temperate-Designs/sunflower-dash/issues"
+  },
+  "homepage": "https://github.com/google/docsy-example#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^8.3.7",
+    "postcss-cli": "^8.3.1"
+  }
+}

@@ -57,7 +57,8 @@
 </li>
 </ul>
 </div>
-<div class="navbar-nav d-none d-lg-block"></div>
+<div class="navbar-nav d-none d-lg-block"><input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off>
+</div>
 </nav>
 </header>
 <div class="container-fluid td-outer">
@@ -66,6 +67,7 @@
 <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
 <div id=td-sidebar-menu class=td-sidebar__inner>
 <form class="td-sidebar__search d-flex align-items-center">
+<input type=search class="form-control td-search-input" placeholder="&#xf002; Search this site…" aria-label="Search this site…" autocomplete=off>
 <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type=button data-toggle=collapse data-target=#td-section-nav aria-controls=td-docs-nav aria-expanded=false aria-label="Toggle section navigation">
 </button>
 </form>
@@ -138,6 +140,7 @@
 </div>
 <div class=td-toc><nav id=TableOfContents>
 <ul>
+<li><a href=#developer-setup>Developer Setup</a></li>
 <li><a href=#quick-start-with-netlify>Quick start with Netlify</a></li>
 <li><a href=#updating-a-single-page>Updating a single page</a></li>
 <li><a href=#previewing-your-changes-locally>Previewing your changes locally</a></li>
@@ -178,19 +181,35 @@
 <header class=article-meta>
 </header>
 <div class="pageinfo pageinfo-primary">
-<p>These basic sample guidelines assume that your Docsy site is deployed using Netlify and your files are stored in GitHub. You can use the guidelines &ldquo;as is&rdquo; or adapt them with your own instructions: for example, other deployment options, information about your doc project&rsquo;s file structure, project-specific review guidelines, versioning guidelines, or any other information your users might find useful when updating your site. <a href=https://github.com/kubeflow/website/blob/master/README.md>Kubeflow</a> has a great example.</p>
-<p>Don&rsquo;t forget to link to your own doc repo rather than our example site! Also make sure users can find these guidelines from your doc repo README: either add them there and link to them from this page, add them here and link to them from the README, or include them in both locations.</p>
+<p>These basic sample guidelines assume that your Docsy site is deployed using
+Netlify and your files are stored in GitHub. You can use the guidelines &ldquo;as is&rdquo;
+or adapt them with your own instructions: for example, other deployment options,
+information about your doc project&rsquo;s file structure, project-specific review
+guidelines, versioning guidelines, or any other information your users might
+find useful when updating your site.
+<a href=https://github.com/kubeflow/website/blob/master/README.md>Kubeflow</a> has a
+great example.</p>
+<p>Don&rsquo;t forget to link to your own doc repo rather than our example site! Also
+make sure users can find these guidelines from your doc repo README: either add
+them there and link to them from this page, add them here and link to them from
+the README, or include them in both locations.</p>
 </div>
 <p>We use <a href=https://gohugo.io/>Hugo</a> to format and generate our website, the
 <a href=https://github.com/google/docsy>Docsy</a> theme for styling and site structure,
 and <a href=https://www.netlify.com/>Netlify</a> to manage the deployment of the site.
 Hugo is an open-source static site generator that provides us with templates,
 content organisation in a standard directory structure, and a website generation
-engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps them up into a website.</p>
+engine. You write the pages in Markdown (or HTML if you want), and Hugo wraps
+them up into a website.</p>
 <p>All submissions, including submissions by project members, require review. We
 use GitHub pull requests for this purpose. Consult
 <a href=https://help.github.com/articles/about-pull-requests/>GitHub Help</a> for more
 information on using pull requests.</p>
+<h2 id=developer-setup>Developer Setup</h2>
+<p>We suggest you use a Flutter aware IDE such as Android Studio, Visual
+Studio Code with the Flutter plugin, or go over to
+<a href=https://gitpod.io#https://github.com/Temperate-Designs/sunflower-dash>GitPod</a>
+where everything is already set up.</p>
 <h2 id=quick-start-with-netlify>Quick start with Netlify</h2>
 <p>Here&rsquo;s a quick guide to updating the docs. It assumes you&rsquo;re familiar with the
 GitHub workflow and you&rsquo;re happy to use the automated preview of your doc
@@ -262,7 +281,7 @@ We are sorry! Please <a href=https://github.com/Temperate-Designs/sunflower-dash
 <script>const yesButton=document.querySelector('.feedback--answer-yes'),noButton=document.querySelector('.feedback--answer-no'),yesResponse=document.querySelector('.feedback--response-yes'),noResponse=document.querySelector('.feedback--response-no'),disableButtons=()=>{yesButton.disabled=!0,noButton.disabled=!0},sendFeedback=b=>{if(typeof ga!='function')return;const a={command:'send',hitType:'event',category:'Helpful',action:'click',label:window.location.pathname,value:b};ga(a.command,a.hitType,a.category,a.action,a.label,a.value)};yesButton.addEventListener('click',()=>{yesResponse.classList.add('feedback--response__visible'),disableButtons(),sendFeedback(1)}),noButton.addEventListener('click',()=>{noResponse.classList.add('feedback--response__visible'),disableButtons(),sendFeedback(0)})</script>
 <br>
 <div class="text-muted mt-5 pt-3 border-top">
-Last modified October 18, 2021: <a href=https://github.com/Temperate-Designs/sunflower-dash/commit/5e744b923166e3bb789d731e56e3eae904ff881e>Switch to `docsy` theme (5e744b9)</a>
+Last modified October 20, 2021: <a href=https://github.com/Temperate-Designs/sunflower-dash/commit/91a554aa3ce95bfb03635b07bd24264479a276e4>Add search engine ID (91a554a)</a>
 </div>
 </div>
 </main>
